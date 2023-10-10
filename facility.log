@@ -1,0 +1,70 @@
+
+Gurobi 10.0.3 (mac64[arm]) logging started Tue Oct 10 13:53:29 2023
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-02-24
+Set parameter Method to value 2
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[arm])
+
+CPU model: Apple M2
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 9 rows, 25 columns and 45 nonzeros
+Model fingerprint: 0x36b45dc0
+Variable types: 20 continuous, 5 integer (5 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+03, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+01, 2e+01]
+
+User MIP start produced solution with objective 210500 (0.01s)
+Loaded user MIP start with objective 210500
+
+Presolve time: 0.00s
+Presolved: 9 rows, 25 columns, 45 nonzeros
+Variable types: 20 continuous, 5 integer (5 binary)
+Root barrier log...
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 2.000e+01
+ Factor NZ  : 4.500e+01
+ Factor Ops : 2.850e+02 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   7.94290841e+05 -2.24842916e+05  7.25e+00 3.75e+03  2.69e+04     0s
+   1   2.34432856e+05  7.59319096e+04  1.78e-15 7.28e-12  3.17e+03     0s
+   2   2.10232015e+05  1.89880475e+05  6.11e-16 3.64e-12  4.07e+02     0s
+   3   2.00964341e+05  1.98582137e+05  1.69e-14 3.64e-12  4.76e+01     0s
+   4   1.99878036e+05  1.99804970e+05  1.78e-13 3.64e-12  1.46e+00     0s
+   5   1.99833638e+05  1.99832960e+05  1.14e-13 1.82e-12  1.36e-02     0s
+   6   1.99833333e+05  1.99833333e+05  2.33e-14 3.64e-12  1.39e-08     0s
+   7   1.99833333e+05  1.99833333e+05  7.11e-15 3.64e-12  1.39e-14     0s
+
+Barrier solved model in 7 iterations and 0.01 seconds (0.00 work units)
+Optimal objective 1.99833333e+05
+
+
+Root relaxation: objective 1.998333e+05, 6 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 199833.333    0    1 210500.000 199833.333  5.07%     -    0s
+     0     0 210500.000    0    1 210500.000 210500.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 2
+
+Explored 1 nodes (8 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 210500 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.105000000000e+05, best bound 2.105000000000e+05, gap 0.0000%
